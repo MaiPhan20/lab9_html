@@ -1,0 +1,28 @@
+fieldset{
+    border: 2px solid gray;
+    background-color: #ffffff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    width: 40%;
+    height: 50%;
+}
+fieldset legend{
+    border: 2px solid gray;
+    background-color: #efefef;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+fieldset legend span input{
+    border: dotted;
+}
+.list{
+    margin: 0;
+    list-style-type: decimal-leading-zero;
+
+}

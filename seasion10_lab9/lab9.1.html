@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="#">
+    <fieldset>
+        <legend>Your Details</legend>
+
+        Name:<input type="text" name="Name"><br>
+        Email:<input type="text" name="Email"><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Review</legend>
+        <label>How  did you hear about us?:</label>
+        <select name="MXH[]" >
+            <optgroup label="Châu Á" value="chau_a">
+                <option name="chau_luc[]" value="1">Việt Nam</option>
+                <option value="2">Lào</option>
+                <option value="3">Campuchia</option>
+            </optgroup>
+            <optgroup name="chau_luc[]" label="Châu Mỹ" value="chau_my">
+                <option value="4">USA</option>
+                <option value="5">Canada</option>
+                <option value="6">Mexico</option>
+            </optgroup>
+        </select>
+        <form action="#">
+            <P>Would you visit again</P>
+            <input type="radio" name="gender" value="Yes" checked> Yes
+            <input type="radio" name="gender" value="No"> No
+            <input type="radio" name="gender" value="Maybe"> Other<br>
+            <label for="Comments">Comments</label><br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+
+  </textarea>
+            <br><br>
+
+</textarea>
+        </form>
+        <input type="checkbox">
+        <label>Sign me up for email updates</label><br>
+        <input type="submit" value="Submit here">
+    </fieldset>
+</form>
+</body>
+</html>
