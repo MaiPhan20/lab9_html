@@ -3,21 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <style type="text/css">
+     *{
+         font-family: arial ,verdana,sans-serif;
+         color:#665544;
+     }
+     input{
+         border-bottom: 1px dotted #dcdcdc;
+         border-top: none;
+         border-right: none;
+         padding: 5px;
+         width: 280px;
+         margin-bottom: 20px;
+     }
+     input:focus{
+         border: 1px dotted #dcdcdc;
+         outline: none;
+     }
+     input#submit{
+         color:#ffffff;
+         background-color: #665544;
+         border:none;
+         border-radius: 5px;
+         width: 180px;
+         text-transform: uppercase;
+     }
+     input#submit:hover{
+         color: #665544;
+         background-color: #Efefef;
+     }
+     fieldset{
+         width: 350px;
+         border: 1px solid #dcdcdc;
+         padding: 20px;
+         text-align: right;
+     }
+     legend{
+         background-color: #efefef;
+         border: 1px solid #dcdcdc;
+         border-radius: 10px;
+         padding: 10px 20px;
+         text-align: left;
+         text-transform: uppercase;
+     }
+     </style>
+
 </head>
 <body>
-<fieldset>
-    <legend >NEWSLETTER</legend>
-    <span style="color: #665544"> Name:<input type="text" name="Name"></span><br>
-    <span style="color: #665544">Email:<input type="text" name="Email"><br><br></span>
-    <div id="summit">
-    <input style="background-color: #665544;color: white;border: 2px solid gray;float:right ;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -ms-border-radius: px;
-    -o-border-radius: 10px;
-    border-radius: 10px;" type="submit" value="SUBCRIBE">
-    </div>
-</fieldset>
+<form>
+     <fieldset>
+     <legend>Newsletter</legend>
+     <label for ="name">Name</label>
+     <input type ="text" id="name">
+     <label for="email">Email</label>
+     <input type="email" id ="eamil">
+     <input type ="submit" value ="subcribe" id="submit">
+     </fieldset>
+     </form>
+
 </body>
 </html>
